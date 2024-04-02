@@ -27,12 +27,6 @@ const getBlogs = asyncHandler(async(req, res) =>{
         blogs: response ? response : 'Cannot get blog'
     })
 });
-
-/*like and dislike
-khi nguoi dung like mot bai blog thi
-1: check xem nguoi do co dislike truoc hay ko - > bo dislike
-2: check xem nguoi do truoc do co like hay kong - > bo like / them like
- */
 const likeBlog = asyncHandler(async(req, res) =>{
     const {_id} = req.user
     const {bid} = req.body

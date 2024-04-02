@@ -1,6 +1,4 @@
 const mongoose = require("mongoose");
-
-// Declare the Schema of the Mongo model
 var roleSchema = new mongoose.Schema({
   code: {
     type: String,
